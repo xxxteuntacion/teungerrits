@@ -14,63 +14,107 @@
 				text-align: center;}
 				
 			.header {
-				height: 13%;
-				width: 100%;
-				background-color: rgba(255,255,255,0.9); 
-				text-align: center center;
-				font-size: 100%; }
+				padding: 10px 0px;
+				background-image: url(images/02.png);
+				background-position:center center;
+				font-size: 100%;
+				z-index: 10;}
+			.content {
+				padding: 0px;}
+
+			.sticky {
+				position: fixed;
+				top: 0;
+				width: 100%;}
+
+			.sticky + .content {
+				padding-top: 102px;}	
 				
 			.wrapper {
 				position: relative;
 				margin: 0px auto;
-				height: 821px;
+				height: 50vw;
 				background-image: url("images/boeddha_geenteun.png");
 				background-size: 100%;
 				background-repeat: no-repeat;				
 				background-position: center top;
 				background-attachment: fixed; }
+				
 			.wrapper img{
 				position: absolute;
 				margin-left: auto;
 				margin-right: auto;
 				left: 0;
 				right: 0;
-				
 				top: 0px;
 				max-height: 100%;
-				max-width: 100%;}
+				max-width: 100%;
+				z-index: 1;}
 				
 			.about
 		</style>
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="header">
+			<div class="header" id="header">
 				<h1>Teungerrits.nl</h1>
 				<p><b>Voor je dagelijkse dosis Teun!</b></p>
 			</div>
 			<img src="images/boeddha_alleenteun.png" alt="">
 		</div>
 		<div class="about">
-		<p> fuck </p>
-		<p> deze update van de website had niet live moeten gaan </p>
-		<p> lol </p>
-		<p> ik heb ook geen backup </p>
-		<p> lol</p>
-		<p> dit is eigenlijk niet echt grappig ofzo</p>
-		<p> het is eigenlijk bestwel pijnlijk</p>
-		<p> belijk dit ook niet op je telefoon</p>
-		<p> dan krijg je pas echt hoofdpijn</p>
-		<p> ik had dit meer gedaan om te kijken hoe het naar beneden scrollen leuk kon zijn</p>
-		<p> daarom staat er heel erg vaak "dit is een test lol"</p>
-		<p> dit is een test lol</p>
-		<p> dit is een test lol</p>
-		<p> dit is een test lol</p>
-		<p> dit is een test lol</p>
-		<p> dit is een test lol</p>
-		<p> dit is een test lol</p>
-		<p> dit is een test lol</p>
-		<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>
+			<p> dit is een test lol</p>			
 		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var header = document.getElementById("header");
+			var sticky = header.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+					}
+				}
+		</script>
 	</body>
 </html>
