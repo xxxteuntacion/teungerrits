@@ -6,98 +6,31 @@
 		<meta name="teun." content="teun gerrits">
 		<meta name="je gaat hier niks vinden." content="Teun Gerrits.">
 		<meta name="Gerrits" content="">
-		<style type="text/css">
-			body {
-				color: #000000;
-				margin: 0px;}
-				
-			.header {
-				padding: 9px 0px;
-				background-image: url(images/header.png);
-				background-position:center bottom;
-				font-size: 100%;
-				z-index: 10; 
-				font-family: "Comic Sans MS", cursive, sans-serif;
-				text-align: center;}
+		<link href="index.css" rel="stylesheet" type="text/css"/>
+		<style>
+		body {
+			background-color: white;
+			margin: 0%;
+			}
 			
-			.menubar {
-				cursor: pointer;
-				position:absolute;
-				left:15px; 
-				top: 30px;
-				width: 60px;
-				height: 40px;}
-
-				.content {
-					padding: 0px;}
-
-				.sticky {
-					position: fixed;
-					top: 0;
-					width: 100%;}
-
-				.sticky + .content {
-					padding-top: 102px;}	
-			
-			
-			.bar1, .bar2, .bar3 {
-				width: 35px;
-				height: 5px;
-				background-color: #333;
-				margin: 6px 15px;
-				transition: 0.4s;}
-			
-				.change .bar1 {
-					-webkit-transform: rotate(-90deg) translate(-9px, 9px);
-					transform: rotate(-90deg) translate(-9px, 9px);}
-				
-				.change .bar2 {
-					-webkit-transform: rotate(-90deg) translate(2px, -2px);
-					transform: rotate(-90deg) translate(2px, -2px)}
-				
-				.change .bar3 {
-					-webkit-transform: rotate(-90deg) translate(13px, -13px);
-					transform: rotate(-90deg) translate(13px, -13px);}		
-				
-			
-				
-			.wrapper {
-				position: relative;
-				margin: 0px auto;
-				height: 50vw;
-				background-image: url("images/boeddha_geenteun.png");
-				background-size: 100%;
-				background-repeat: no-repeat;				
-				background-position: center top;
-				background-attachment: fixed; }
-				
-			.wrapper img{
-				position: absolute;
-				margin-left: auto;
-				margin-right: auto;
-				left: 0;
-				right: 0;
-				top: 0px;
-				max-height: 100%;
-				max-width: 100%;
-				z-index: 1;}
-				
-			.about{
-				font-family: "Comic Sans MS", cursive, sans-serif;}
 		</style>
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper" id= "wrapper">
 			<div class="header" id="header">
-				<div class="menubar" onclick="menuknop(this)">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</div>			
-				<H1>Teungerrits.nl</H1>	
+				<div class="headerbanner">
+					<div class="menubar" onclick="menuknop(wrapper)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>											
+					</div>					
+					<H1>Teungerrits.nl</H1>	
 				</div>
+				<div class="sidebar"><p> test</p></div>	
+			</div>
 			<img src="images/boeddha_alleenteun.png" alt="">
 		</div>
+	
 		<div class="about">
 			<p> dit is een test lol</p>
 			<p> dit is een test lol</p>
@@ -152,6 +85,7 @@
 					}
 				}
 				
+							
 			function menuknop(x) {
 				x.classList.toggle("change");}	
 		</script>
