@@ -2,9 +2,29 @@
 
 body {
 	background-color: #000000;
-	margin: 0%;
-	}
+	margin: 0%;}
 
+.wrapper {
+	position: relative;
+	margin: 0px;
+	height: 45vw;
+	background-image: url("images/boeddha_geenteun.png");
+	background-size: 100%;
+	background-repeat: no-repeat;				
+	background-position: center top;
+	background-attachment: fixed; }
+	
+.wrapper img{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 0px;
+	max-height: 100%;
+	max-width: 100%;
+	z-index: 1;}
+	
 .headerbanner {
 	margin: 0;
 	padding: 9px 0px;
@@ -15,7 +35,7 @@ body {
 	text-align: center;}	
 	
 .header {
-	height: 100%;
+	height: 20%;
 	z-index: 10; }
 
 				
@@ -30,13 +50,14 @@ body {
 	.sticky + .content {
 		padding-top: 102px;}	
 						
-.menubar {
+.menubutton {
 	cursor: pointer;
 	position:absolute;
 	left:15px; 
 	top: 30px;
 	width: 60px;
-	height: 30px;}
+	height: 30px;
+	float: left;}
 			
 .sidebar {
 	width: 19%;
@@ -73,28 +94,28 @@ body {
 		-webkit-transform: rotate(-90deg) translate(13px, -13px);
 		transform: rotate(-90deg) translate(13px, -13px);}		
 				
-			
-				
-.wrapper {
+
+								
+.about{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;}
+	
+.infobox1 {
 	position: relative;
-	margin: 0px;
-	height: 45vw;
-	background-image: url("images/boeddha_geenteun.png");
+	margin-top: 100px;
+	height: 40vw;
+	background-image: url("images/achtergrond1.png");
 	background-size: 100%;
-	background-repeat: no-repeat;				
-	background-position: center top;
+	background-repeat: no-repeat;
 	background-attachment: fixed; }
 	
-.wrapper img{
+.infobox1 img{
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
 	top: 0px;
-	max-height: 100%;
-	max-width: 100%;
+	height: 100%;
+	width: 100%;
 	z-index: 1;}
-								
-.about{
-	font-family: "Comic Sans MS", cursive, sans-serif;}
