@@ -4,6 +4,12 @@ body {
 	background-color: #000000;
 	margin: 0%;}
 
+	@keyframes wrapperani {
+		0% {height: 0vw;}
+		2% {height: 0vw;}
+		100% {height: 45vw;}
+	  }
+	  
 .wrapper {
 	position: relative;
 	margin: 0px;
@@ -12,8 +18,17 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;				
 	background-position: center top;
-	background-attachment: fixed; }
-	
+	background-attachment: fixed; 
+	animation-name: wrapperani;
+	animation-duration: 1s;
+}
+
+@keyframes wrapperimgani {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 100;}
+  }	
+  
 .buddhaimg {
 	position: absolute;
 	margin-left: auto;
@@ -23,7 +38,9 @@ body {
 	top: 0px;
 	max-height: 100%;
 	max-width: 100%;
-	z-index: 1;
+	z-index: 0;
+	animation-name: wrapperimgani;
+	animation-duration: 2s;	
 	}
 
 
@@ -35,7 +52,8 @@ body {
 	background-position:center bottom;
 	font-size: 100%;	
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	text-align: center;}	
+	text-align: center;
+}	
 	
 .header {
 	height: 20%;
@@ -97,11 +115,23 @@ body {
 		-webkit-transform: rotate(-90deg) translate(13px, -13px);
 		transform: rotate(-90deg) translate(13px, -13px);}		
 				
-
-								
-.about{
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	text-align: center;}
+.sidebarsegment {
+	width: 100%;
+	height: 9%;
+	font-family: "Comic Sans MS", cursive, sans-serif; 
+	text-align: center;
+	color: aliceblue;
+	line-height: 5vw;
+}
+	.donatiebox {
+		background-image: url(images/03.png);
+		background-size: 130%;
+		background-position: center center;
+		transition: 1s;
+	}
+	.donatiebox:hover {
+		background-size: 100%;
+	}
 
 	@keyframes infoboxani {
 		0% {background-size: 100%;}
@@ -123,10 +153,17 @@ body {
 	animation-duration: 15s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;}
-	
+
+	@keyframes infotextani {
+		0% {opacity: 0;}
+		50% {opacity: 0;}
+		100% {opacity: 100;}
+	  }	
 .infotext {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	text-align: center;
+	animation-name: infotextani;
+	animation-duration: 5s;
 }
 
 .infobox img{
