@@ -84,7 +84,7 @@ body {
 	width: 19%;
 	background-color: #333;
 	height: 100vh;
-	margin-top: -16px;
+	margin-top: -24px;
 	margin-left: -19%;
 	z-index: 9;
 	transition: 0.3s;
@@ -120,11 +120,13 @@ body {
 	height: 9%;
 	font-family: "Comic Sans MS", cursive, sans-serif; 
 	text-align: center;
-	color: aliceblue;
+	color: black;
 	line-height: 5vw;
+	text-shadow: 1px 1px 1px #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	font-size: x-large;
 }
 	.donatiebox {
-		background-image: url(images/03.png);
+		background-image: url(images/money.png);
 		background-size: 130%;
 		background-position: center center;
 		transition: 1s;
@@ -132,7 +134,16 @@ body {
 	.donatiebox:hover {
 		background-size: 100%;
 	}
-
+	.donatiefoto {
+		background-image: url(images/donatiefoto.png);
+		background-size: 40%;
+		background-repeat: no-repeat;
+		background-position: 1% bottom;
+		transition: 1s;
+	}
+	.donatiefoto:hover {
+		background-position: -2% bottom;
+	}
 	@keyframes infoboxani {
 		0% {background-size: 100%;}
 		100% {background-size: 125%;}
@@ -140,6 +151,10 @@ body {
 
 	  #infobox {animation-timing-function: ease-in-out;}
 
+.button {
+	color: black;
+	text-decoration: none;
+}	  
 .infobox {
 	position: relative;
 	margin-top: 100px;
