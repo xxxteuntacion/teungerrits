@@ -109,7 +109,7 @@ body {
 				
 	.change .bar2 {
 		-webkit-transform: rotate(-90deg) translate(2px, -2px);
-		transform: rotate(-90deg) translate(2px, -2px)}
+		transform: rotate(-90deg) translate(2px, -2px);}
 				
 	.change .bar3 {
 		-webkit-transform: rotate(-90deg) translate(13px, -13px);
@@ -247,6 +247,7 @@ body {
 	background-image: url("images/achtergrond1.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
+	z-index: 1;
 	background-position: center;
 	animation-name: infoboxani;
 	animation-duration: 15s;
@@ -274,4 +275,66 @@ body {
 	top: 0px;
 	height: 100%;
 	width: 100%;
-	z-index: 1;}
+	z-index: 1;
+}
+
+@media (max-width: 1000px) {
+
+    .wrapper {
+		height: 60vh;
+		width: 100%;
+		background-size: 120vh;
+		overflow: hidden;
+	}
+	.buddhaimg {
+		top: 4vh;
+		left: -51%;
+		max-height: 100vh;
+		max-width: 200vw;
+		width: 150vh;
+	}
+	.headerbanner {
+	font-size: 25px;	
+	}	
+	.bar1, .bar2, .bar3 {
+		width: 65px;
+		height: 7px;
+		margin: 12px 15px;
+	}
+	.sidebar {
+		width: 100%;
+		margin-left: -100%;
+		margin-top: -79px;
+	}
+	.change .sidebar {
+		-webkit-transform: translate(0px, 0px);
+		transform: translate(100%, 0px);
+	}
+
+	.sidebarsegment {
+		width: 100%;
+		height: 12%;
+		line-height: 15vh;
+		font-size: 80px;
+		text-shadow: 3px 3px 3px #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
+	}
+	.menubutton {
+		left:20px; 
+		top: 40px;
+		width: 60px;
+	}
+	.change .bar1 {
+		-webkit-transform: rotate(-90deg) translate(-9px, 9px);
+		transform: rotate(-90deg) translate(-17px, 15px);
+	}
+				
+	.change .bar2 {
+		-webkit-transform: rotate(-90deg) translate(2px, -2px);
+		transform: rotate(-90deg) translate(2px, -3px);
+	}
+				
+	.change .bar3 {
+		-webkit-transform: rotate(-90deg) translate(13px, -13px);
+		transform: rotate(-90deg) translate(21px, -21px);
+	}	
+}
