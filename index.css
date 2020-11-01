@@ -292,28 +292,43 @@ body {
 	text-decoration: none;
 }	  
 .infoforeground {
+	position: relative;
+	height: 15vw;
+	max-width: 100vw;
 	background-image: url("images/voorgrond1.png");
-	height: 20vw;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	background-position: right bottom;
+	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 60%);
 	overflow: hidden;
-	transition: 0.4s;
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif; 
+	text-align: center;
 }
-.darkmode .infoforeground {
-	background-image: url("images/voorgrond1dark.png");
+.infoforeground p {
+	font-size: 10px;
+	opacity: 70%;
+	line-height: 53vh;
 }
+
 .infobox {
 	position: relative;
 	margin-top: 100px;
-	height: 20vw;
+	height: 15vw;
 	max-width: 100vw;
 	background-image: url("images/achtergrond1.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	z-index: 1;
-	background-position: center;
+	background-position: center bottom;
 	animation-name: infoboxani;
 	animation-duration: 15s;
 	animation-direction: alternate;
-	animation-iteration-count: infinite;}
+	animation-iteration-count: infinite;
+	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 60%);
+	overflow: hidden;
+}
 	
 
 	@keyframes infotextani {
@@ -328,7 +343,9 @@ body {
 	padding-top: 10px;
 }
 			
-
+h1 {
+	margin-left: 3%;
+}
 
 .infobox img{
 	position: absolute;
@@ -420,5 +437,13 @@ body {
 		margin-top: 40px;
 		width: 60px;
 		height: 60px;
+	}
+	.infoforeground p {
+		font-size: 10px;
+		opacity: 70%;
+		line-height: 13vh;
+	}
+	h1 {
+		margin-left: 10%;
 	}
 }
