@@ -45,7 +45,7 @@ body {
 .headerbanner {
 	margin: 0;
 	padding: 9px 0px;
-	background-image: url(images/header.png);
+	background-color: white;
 	background-position:center bottom;
 	font-size: 100%;	
 	font-family: "Comic Sans MS", cursive, sans-serif;
@@ -55,7 +55,7 @@ body {
 }	
 
 	.darkmode .headerbanner {
-		background-image: url(images/headerdark.png);
+		background-color: #323232;
 		color: white;
 	}
 		
@@ -86,7 +86,6 @@ body {
 }
 
 .darkmodebutton {
-	background-image: url("images/darkmode.png");
 	height: 34px;
 	width:34px;
 	background-size: 98%;
@@ -95,45 +94,44 @@ body {
 	margin-top: 30px;
 	cursor: pointer;
 	transition: 0.3s;
-	background-position: center center;
 	border-radius: 50%;
 }
-	.darkmodebutton:hover {
-		background-size:104%
-	}
+.darkmodebutton img {
+	width: 100%;
+}
 	.darkmode .darkmodebutton {
-		background-image: url("images/lightmode.png");
 		transform: rotate(360deg);
 	}
 .sidebar {
 	width: 19%;
 	background-color: #333;
 	height: 100vh;
-	margin-top: -24px;
 	margin-left: -19%;
 	z-index: 9;
 	transition: 0.3s;
-	padding: 0px;
+	float:left;
+	margin-top: -24px;
+	clip-path: polygon(100% 24px, 100% 100%, 0% 100%, 0px 24px);
 }
 				
 	.change .sidebar {
 		-webkit-transform: translate(19%, 0px);
-		transform: translate(100%, 0px);}
+		transform: translate(100%, 0px);
+}
 
 .darken {
 	width: 100vw;
 	background-color: black;
 	opacity: 0%;
 	height: 100vh;
-	margin-top: -148.5%;
-	margin-left: 100%;
-	z-index: 8;
 	transition: 0.3s;
 	pointer-events: none;
+	overflow: hidden;
 }
 				
 	.change .darken {
 		opacity: 60%;
+		transform: translate(18.8%, 0px);
 	}		
 			
 .bar1, .bar2, .bar3 {
@@ -341,6 +339,7 @@ body {
 	animation-name: infotextani;
 	animation-duration: 5s;
 	padding-top: 10px;
+	font-size: 17px;
 }
 			
 h1 {
@@ -378,6 +377,9 @@ h1 {
 		width: 100%;
 		background-size: 120vh;
 		overflow: hidden;
+	}
+	.infotext {
+		font-size: 13px;
 	}
 	.buddhaimg {
 		left: -51%;
