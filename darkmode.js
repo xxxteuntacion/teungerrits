@@ -11,10 +11,10 @@ function apply() {
 
     if(isDarkMode === 'true') {
         document.body.classList.add(CLASS);
-        document.getElementById('myImage').src  = 'Images/lightmode.png';
+        document.getElementById('myImage').src  = 'images/lightmode.png';
     }
      else {
-       document.getElementById('myImage').src = 'Images/darkmode.png';
+       document.getElementById('myImage').src = 'images/darkmode.png';
     }
 }
 
@@ -25,10 +25,10 @@ function darkmodebutton() {
     document.body.classList.toggle("darkmode");
     var isDarkMode = window.localStorage.getItem(NAME);
     if (isDarkMode === 'true') {
-        document.getElementById('myImage').src  = 'Images/darkmode.png';
+        document.getElementById('myImage').src  = 'images/darkmode.png';
     }
      else {
-       document.getElementById('myImage').src = 'Images/lightmode.png';
+       document.getElementById('myImage').src = 'images/lightmode.png';
    }
     save();
 }
