@@ -1,0 +1,65 @@
+body {
+	text-align: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background-color: skyblue;
+}
+.wrapper {
+	height: fit-content;
+	width: 90%;
+	padding: 5%;
+	padding-top: 30vh;
+	overflow: visible;
+}
+.bar {
+	width: 90%;
+	height: 100px;
+	background-color: slategray;
+	border-radius: 35px;
+	overflow: hidden;
+}
+#myBar {transition-timing-function: linear;}
+
+.progress {
+	width: 0%;
+	height: 100%;
+	background-color: green;
+	border-radius: 35px;
+	overflow: hidden;
+	transition: 50s;
+}
+	.change .progress {
+		width: 100%;
+	}
+
+.text {
+	font-size: 40px;
+	margin-left: -150px;
+}
+
+.button {
+	margin-left: -150px;
+	font-size: 50px;
+	line-height: 0;
+	width: 20%;
+	padding: 2%;
+	border-radius: 15px;
+	background-color: green;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border-width: 0px;
+	cursor: pointer;
+	box-shadow: 0 9px #999;
+	transition: 0.4s;
+	pointer-events: all;
+}
+.button:hover {
+	background-color: darkgreen;
+}
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.change .button {
+	background-color: lightgreen;
+	pointer-events: none;
+}

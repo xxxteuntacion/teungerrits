@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>download</title>
+		<link href="download.css" rel="stylesheet" type="text/css"/>
+		<style>
+		body {
+			background-image: url("images/download.png") ;
+			background-size: cover;
+			margin: 0%;
+			color: #333;
+			}		
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="bar">
+				<div id="myBar" class="progress"></div>
+			</div>
+			<p id="demo" class="text">0%</p>
+			<button id="myBtn"class="button" onclick="move()"><p><b>Download</b></p></button> 
+		</div>
+		<script>
+		function move() {
+			var elem = document.getElementById("myBar");   
+			var width = 0;
+			var id = setInterval(frame, 500);
+			document.getElementById("myBtn").disabled = true;
+			document.body.classList.toggle("change");
+			function frame() {
+				if (width >= 100) {
+				  clearInterval(id);
+				  document.getElementById("demo").innerHTML = "Bestanden gedownload!";
+				  setTimeout(function(){document.location.reload()}, 5000);
+    			} else {
+      				width++; 
+      				document.getElementById("demo").innerHTML = width * 1  + '%';
+    				}
+				}
+			}
+		</script>
+	</body>
+</html>
