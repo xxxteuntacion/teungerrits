@@ -153,7 +153,6 @@ body {
 	.change .darken {
 		opacity: 60%;
 		transform: translate(18.8%, 0px);
-		pointer-events: auto;
 	}		
 			
 .bar1, .bar2, .bar3 {
