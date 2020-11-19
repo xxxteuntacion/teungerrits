@@ -149,6 +149,7 @@ body {
 	transition: 0.3s;
 	pointer-events: none;
 	overflow: hidden;
+	margin-left: 0%;
 }
 				
 	.change .darken {
@@ -471,6 +472,9 @@ h1 {
 	}	
 	.change .darken {
 		opacity: 0%;
+	}	
+	.darken {
+		margin-left: 100%;
 	}	
 	.darkmodebutton {
 		margin-left:24px; 
