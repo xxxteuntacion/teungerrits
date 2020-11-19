@@ -104,7 +104,9 @@ body {
 	.change .darken {
 		opacity: 60%;
 		transform: translate(18.8%, 0px);
-	}	
+		pointer-events: auto;
+		cursor: pointer;
+	}		
 
 .menubutton {
 	cursor: pointer;
