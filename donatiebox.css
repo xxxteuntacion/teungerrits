@@ -17,10 +17,6 @@ body {
 	background-repeat: no-repeat;				
 	background-position: center top;
 	background-attachment: fixed; 
-	animation-name: wrapperani;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-duration: 30s;
 	color: #333;
 }
 .darkmode .wrapper {
@@ -47,6 +43,26 @@ body {
 	animation-duration: 2s;	
 	}
 
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+	background: #333; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #25775a; 
+	border-radius: 4px;
+	width: 8px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+	background: #19523e; 
+	border-radius: 4px;
+	width: 8px;
+}	
+
 .headerbanner {
 	margin: 0;
 	padding: 9px 0px;
@@ -56,11 +72,9 @@ body {
 	text-align: center;
 	transition: 0.4s;
 	color: #333;
-	border-bottom: solid #19523e 2px;
+	box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+	height:20%;
 }	
-	.change .headerbanner {
-		border-bottom: solid #19523e 0px;
-	}	
 	
 	.darkmode .headerbanner {
 		background-color: #323232;
@@ -68,11 +82,11 @@ body {
 	}
 
 .header {
-	height: 20%;
 	z-index: 10; 
 	position: fixed;
-	top: 0;
+	margin-top: 0;
 	width: 100%;
+	pointer-events: none;
 }						
 			
 .sidebar {
@@ -80,15 +94,14 @@ body {
 	background-color: #333;
 	height: 100vh;
 	margin-left: -19%;
-	z-index: 9;
 	transition: 0.3s;
 	float:left;
-	margin-top: -24px;
-	clip-path: polygon(100% 24px, 100% 100%, 0% 100%, 0px 24px);
+	overflow: hidden;
+	pointer-events: auto;
 }
 				
 	.change .sidebar {
-		-webkit-transform: translate(19%, 0px);
+		-webkit-transform: translate(100%, 0px);
 		transform: translate(100%, 0px);
 }
 
@@ -105,11 +118,21 @@ body {
 				
 	.change .darken {
 		opacity: 60%;
-		transform: translate(18.8%, 0px);
+		transform: translate(18.9%, 0px);
 		pointer-events: auto;
 		cursor: pointer;
 	}		
 
+.homebutton {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	left: -1%;
+	right: 0;
+	pointer-events: auto;
+}		
+		
 .menubutton {
 	cursor: pointer;
 	position:absolute;
@@ -118,7 +141,8 @@ body {
 	width: 60px;
 	height: 30px;
 	float: left;
-}	
+	pointer-events: auto;
+}
 
 .darkmodebutton {
 	height: 34px;
@@ -130,6 +154,7 @@ body {
 	cursor: pointer;
 	transition: 0.3s;
 	border-radius: 50%;
+	pointer-events: auto;
 }
 .darkmodebutton img {
 	width: 100%;
@@ -168,118 +193,130 @@ body {
 	}			
 .sidebarsegment {
 	width: 100%;
-	height: 9%;
+	height: 8%;
 	font-family: "Comic Sans MS", cursive, sans-serif; 
 	text-align: center;
+	margin-top: -6.5%;
+	margin-bottom: 14%;
 	color: black;
 	line-height: 5vw;
 	text-shadow: 1px 1px 1px #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 	font-size: x-large;
 }
 
-	.socials {
+.socials {
 	background-image: url(images/socials.png);
 	background-size: 100%;
 	background-position: center center;
 	transition: 1s;
-	}
-		.socials:hover {
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+.socials:hover {
 	background-size: 130%;
-	}
-	.socialsfoto {
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+.socialsfoto {
 	background-image: url(images/socialsfoto.png);
 	background-size: 90%;
 	background-repeat: no-repeat;
 	background-position: 120% -5%;
 	transition: 1s;
-	}
-		.socialsfoto:hover {
+}
+.socialsfoto:hover {
 	background-size: 80%;
 	background-position: 110% -5%;
-	}
+}
 
-	.merch {
-		background-image: url(images/krantpack.png);
-		background-size: 130%;
-		background-position: center center;
-		transition: 1s;
-	}
-	.merch:hover {
-		background-size: 120%;
-		background-position: center -20px;
-	}
-	.merchfoto {
-		background-image: url(images/krantpackfoto.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-		transition: 1s;
-	}
-	.merchfoto:hover {
-		background-size: 102%;
-		background-position: center -15px;
-	}	
+.merch {
+	background-image: url(images/krantpack.png);
+	background-size: 130%;
+	background-position: center center;
+	transition: 1s;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+.merch:hover {
+	background-size: 120%;
+	background-position: center -20px;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+.merchfoto {
+	background-image: url(images/krantpackfoto.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: 1s;
+}
+.merchfoto:hover {
+	background-size: 102%;
+	background-position: center -15px;
+}	
 
-	.teunbot {
-		background-image: url(images/teunbot.png);
-		background-size: 130%;
-		background-position: center center;
-		transition: 1s;
-	}
-	.teunbot:hover {
-		background-size: 100%;
-	}
-	.teunbotfoto {
-		background-image: url(images/teunbotfoto2.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-		transition: 1s;
-	}
-	.teunbotfoto:hover {
-		background-position: center 55%;
-		background-size: 104%;
-	}	
+.teunbot {
+	background-image: url(images/teunbot.png);
+	background-size: 130%;
+	background-position: center center;
+	transition: 1s;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+.teunbot:hover {
+	background-size: 100%;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+.teunbotfoto {
+	background-image: url(images/teunbotfoto.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: 1s;
+}
+.teunbotfoto:hover {
+	background-position: center 55%;
+	background-size: 104%;
+}	
 
-	.overig {
-		background-image: url(images/overig.png);
-		background-size: 130%;
-		background-position: center center;
-		transition: 1s;
-	}
-	.overig:hover {
-		background-size: 100%;
-	}
-	.overigfoto {
-		background-image: url(images/overigfoto.png);
-		background-size: 40%;
-		background-repeat: no-repeat;
-		background-position: 1% bottom;
-		transition: 1s;
-	}
-	.overigfoto:hover {
-		background-position: -2% bottom;
-	}	
+.overig {
+	background-image: url(images/overig.png);
+	background-size: 130%;
+	background-position: center center;
+	transition: 1s;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+.overig:hover {
+	background-size: 100%;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+.overigfoto {
+	background-image: url(images/overigfoto.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: 1% bottom;
+	transition: 1s;
+}
+.overigfoto:hover {
+	background-position: -2% bottom;
+}
+.donatiebox {
+	background-image: url(images/money.png);
+	background-size: 130%;
+	background-position: center center;
+	transition: 1s;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
 
-	.donatiebox {
-		background-image: url(images/money.png);
-		background-size: 130%;
-		background-position: center center;
-		transition: 1s;
-	}
-	.donatiebox:hover {
-		background-size: 100%;
-	}
-	.donatiefoto {
-		background-image: url(images/donatiefoto.png);
-		background-size: 40%;
-		background-repeat: no-repeat;
-		background-position: 1% bottom;
-		transition: 1s;
-	}
-	.donatiefoto:hover {
-		background-position: -2% bottom;
-	}
+.donatiebox:hover {
+	background-size: 100%;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+.donatiefoto {
+	background-image: url(images/donatiefoto.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: 1% bottom;
+	transition: 1s;
+}
+.donatiefoto:hover {
+	background-position: -2% bottom;
+}
 
 .homebutton {
 	width: 40%;
@@ -340,6 +377,7 @@ ul {
 	transition: 1s;
 	font-size: xx-large;
 	text-shadow: 1px 1px 1px #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	border-radius: 10px;
 }
 .donatieknop:hover {
 		background-size: 100%;
@@ -362,23 +400,19 @@ ul {
 
   #infobox {animation-timing-function: ease-in-out;}
 
-.infobox {
+  .infobox {
 	position: relative;
 	margin-top: 100px;
 	height: 15vw;
-	max-width: 100vw;
 	background-image: url("images/achtergrond1.png");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
-	z-index: 1;
 	background-position: center bottom;
-	animation-name: infoboxani;
-	animation-duration: 15s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
+	background-attachment: fixed;
 	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 60%);
 	overflow: hidden;
 }
+
 .infoforeground {
 	position: relative;
 	height: 15vw;
@@ -418,13 +452,6 @@ ul {
 		opacity: 70%;
 		line-height: 13vh;
 	}
-
-	.homebutton {
-		width: 50%;
-		left: 11%;
-		right: 0;
-		margin-left: 25%;
-	}	
 
 	.buddhaimg {
 		top: 7vh;
