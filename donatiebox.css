@@ -349,6 +349,14 @@ body {
 	text-decoration: none;
 }	  
 
+.link {
+	color: #333;
+	text-decoration: underline;
+}	
+.darkmode .link {
+	color: white
+}
+
 .infotext {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	text-align: center;
@@ -363,6 +371,30 @@ ul {
 	left: 27.9vw;
 	}
 
+.bar {
+	width: 50%;
+	height: auto;
+	background-color: #888;
+	border-radius: 35px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	transition: 0.4s;
+}
+
+.progress {
+	width: 5.1%;
+	height: 100%;
+	background-color: #25775a;
+	border-radius: 35px;
+	overflow: visible;
+	color: white;
+}
+.darkmode .bar {
+	background-color: #111;
+}
 
 .donatieknop {
 	background-image: url(images/money.png);
@@ -378,10 +410,13 @@ ul {
 	font-size: xx-large;
 	text-shadow: 1px 1px 1px #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 	border-radius: 10px;
+	transform: scale(1.1, 1.1);
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
 }
 .donatieknop:hover {
-		background-size: 100%;
-		transform: scale(1.1, 1.1);
+	background-size: 100%;
+	box-shadow: 0px 0px 20px 1px rgb(0, 0, 0);
+	text-shadow: 1px 1px 30px #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 .disclaimer {
@@ -393,12 +428,6 @@ ul {
 	color: whitesmoke;
 }
 
-@keyframes infoboxani {
-	0% {background-size: 100%;}
-	100% {background-size: 125%;}
-  }
-
-  #infobox {animation-timing-function: ease-in-out;}
 
   .infobox {
 	position: relative;
@@ -435,17 +464,19 @@ ul {
 }
 @media (max-width: 1000px) {
 
-	@keyframes wrapperani {
-		0% {background-size: 300%;}
-		100% {background-size: 250%;}
-	  }
-	  #wrapper {animation-timing-function: ease-in-out;}  
-
     .wrapper {
 		height: 35vh;
 		width: 100%;
 		background-size: 120vh;
 		overflow: hidden;
+	}
+	.bar {
+		width: 80%;
+		height: 50px;
+	}
+
+	.progress {
+		padding-left: 10px;
 	}
 	.infoforeground p {
 		font-size: 10px;
