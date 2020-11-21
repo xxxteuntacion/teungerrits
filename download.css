@@ -11,8 +11,8 @@ body {
 	overflow: visible;
 }
 .bar {
-	width: 90%;
-	height: 100px;
+	width: 50%;
+	height: 50px;
 	background-color: slategray;
 	border-radius: 35px;
 	overflow: hidden;
@@ -20,16 +20,13 @@ body {
 #myBar {transition-timing-function: linear;}
 
 .progress {
-	width: 0%;
+	width: 5.1%;
 	height: 100%;
 	background-color: green;
 	border-radius: 35px;
 	overflow: hidden;
 	transition: 50s;
 }
-	.change .progress {
-		width: 100%;
-	}
 
 .text {
 	font-size: 40px;

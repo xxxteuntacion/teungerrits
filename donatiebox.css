@@ -168,7 +168,9 @@ body {
 	height: 5px;
 	background-color: #333;
 	margin: 6px 15px;
-	transition: 0.4s;}
+	transition: 0.4s;
+	border-radius: 2.5px;
+}
 			
 	.change .bar1 {
 		-webkit-transform: rotate(-90deg) translate(-9px, 9px);
@@ -403,13 +405,13 @@ ul {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	width: 20%;
+	width: 35%;
 	line-height: 10vh;
 	background-position: center center;
 	transition: 1s;
 	font-size: xx-large;
 	text-shadow: 1px 1px 1px #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-	border-radius: 10px;
+	border-radius: 200px;
 	transform: scale(1.1, 1.1);
 	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
 }
@@ -473,6 +475,7 @@ ul {
 	.bar {
 		width: 80%;
 		height: 50px;
+		margin-bottom: 50px;
 	}
 
 	.progress {
@@ -551,11 +554,14 @@ ul {
 		width: 85%;
 		font-size: 55px;
 		text-shadow: 3px 3px 3px #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
-		border-radius: 13px;
+		border-radius: 100px;
 	}
 	.change .darken {
 		opacity: 0%;
 	}	
+	.infobox {
+		margin-top: 200px;
+	}
 	.darkmodebutton {
 		margin-left:24px; 
 		margin-top: 40px;
