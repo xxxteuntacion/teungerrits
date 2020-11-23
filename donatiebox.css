@@ -1,355 +1,24 @@
-body {
-	background-color: #000000;
-	margin: 0%;}
-
-	@keyframes wrapperani {
-		0% {background-size: 100%;}
-		100% {background-size: 120%;}
-	  }
-
-	  #wrapper {animation-timing-function: ease-in-out;}  
-.wrapper {
-	position: relative;
-	margin: 0px;
-	height: 31vw;
+.banner {
 	background-image: url("images/moneie.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;				
-	background-position: center top;
-	background-attachment: fixed; 
-	color: #333;
 }
-.darkmode .wrapper {
-	background-color: #333;
-	color: white;
-}	
+
 @keyframes wrapperimgani {
-	0% {opacity: 0;}
-	50% {opacity: 0;}
-	100% {opacity: 100;}
-  }	
+	0% {bottom: -1000px;}
+	50% {bottom: -1000px;}
+	100% {bottom: 0;}
+}	
   
-.buddhaimg {
+.teunimg {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 25;
-	bottom: 0px;
 	max-height: 75%;
 	max-width: 75%;
-	z-index: 0;
 	animation-name: wrapperimgani;
 	animation-duration: 2s;	
-	}
-
-::-webkit-scrollbar {
-	width: 10px;
-  }
-  
-::-webkit-scrollbar-track {
-	background: #333; 
 }
-
-::-webkit-scrollbar-thumb {
-	background: #25775a; 
-	border-radius: 4px;
-	width: 8px;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-	background: #19523e; 
-	border-radius: 4px;
-	width: 8px;
-}	
-
-.headerbanner {
-	margin: 0;
-	padding: 9px 0px;
-	background-color: white;
-	z-index: 10;
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	text-align: center;
-	transition: 0.4s;
-	color: #333;
-	box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
-	height:20%;
-}	
-	
-	.darkmode .headerbanner {
-		background-color: #323232;
-		color: white;
-	}
-
-.header {
-	z-index: 10; 
-	position: fixed;
-	margin-top: 0;
-	width: 100%;
-	pointer-events: none;
-}						
-			
-.sidebar {
-	width: 19%;
-	background-color: #333;
-	height: 100vh;
-	margin-left: -19%;
-	transition: 0.3s;
-	float:left;
-	overflow: hidden;
-	pointer-events: auto;
-}
-				
-	.change .sidebar {
-		-webkit-transform: translate(100%, 0px);
-		transform: translate(100%, 0px);
-}
-
-.darken {
-	width: 100vw;
-	background-color: black;
-	opacity: 0%;
-	height: 100vh;
-	transition: 0.3s;
-	pointer-events: none;
-	overflow: hidden;
-	margin-left: 0%;
-}
-				
-	.change .darken {
-		opacity: 60%;
-		transform: translate(18.9%, 0px);
-		pointer-events: auto;
-		cursor: pointer;
-	}		
-
-.homebutton {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 10%;
-	left: -1%;
-	right: 0;
-	pointer-events: auto;
-}		
-		
-.menubutton {
-	cursor: pointer;
-	position:absolute;
-	left:15px; 
-	top: 30px;
-	width: 60px;
-	height: 30px;
-	float: left;
-	pointer-events: auto;
-}
-
-.darkmodebutton {
-	height: 34px;
-	width:34px;
-	background-size: 98%;
-	float: right;
-	margin-right: 30px;
-	margin-top: 30px;
-	cursor: pointer;
-	transition: 0.3s;
-	border-radius: 50%;
-	pointer-events: auto;
-}
-.darkmodebutton img {
-	width: 100%;
-}
-	.darkmode .darkmodebutton {
-		transform: rotate(360deg);
-	}	
-
-.bar1, .bar2, .bar3 {
-	width: 35px;
-	height: 5px;
-	background-color: #333;
-	margin: 6px 15px;
-	transition: 0.4s;
-	border-radius: 2.5px;
-}
-			
-	.change .bar1 {
-		-webkit-transform: rotate(-90deg) translate(-9px, 9px);
-		transform: rotate(-90deg) translate(-9px, 9px);}
-				
-	.change .bar2 {
-		-webkit-transform: rotate(-90deg) translate(2px, -2px);
-		transform: rotate(-90deg) translate(2px, -2px)}
-				
-	.change .bar3 {
-		-webkit-transform: rotate(-90deg) translate(13px, -13px);
-		transform: rotate(-90deg) translate(13px, -13px);}		
-	
-	.darkmode .bar1 {
-		background-color: white;
-	}
-	.darkmode .bar2 {
-		background-color: white;
-	}
-	.darkmode .bar3 {
-		background-color: white;
-	}			
-.sidebarsegment {
-	width: 100%;
-	height: 8%;
-	font-family: "Comic Sans MS", cursive, sans-serif; 
-	text-align: center;
-	margin-top: -6.5%;
-	margin-bottom: 14%;
-	color: black;
-	line-height: 5vw;
-	text-shadow: 1px 1px 1px #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-	font-size: x-large;
-}
-
-.socials {
-	background-image: url(images/socials.png);
-	background-size: 100%;
-	background-position: center center;
-	transition: 1s;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-}
-.socials:hover {
-	background-size: 130%;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-}
-.socialsfoto {
-	background-image: url(images/socialsfoto.png);
-	background-size: 90%;
-	background-repeat: no-repeat;
-	background-position: 120% -5%;
-	transition: 1s;
-}
-.socialsfoto:hover {
-	background-size: 80%;
-	background-position: 110% -5%;
-}
-
-.merch {
-	background-image: url(images/krantpack.png);
-	background-size: 130%;
-	background-position: center center;
-	transition: 1s;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-}
-.merch:hover {
-	background-size: 120%;
-	background-position: center -20px;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-}
-.merchfoto {
-	background-image: url(images/krantpackfoto.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	transition: 1s;
-}
-.merchfoto:hover {
-	background-size: 102%;
-	background-position: center -15px;
-}	
-
-.teunbot {
-	background-image: url(images/teunbot.png);
-	background-size: 130%;
-	background-position: center center;
-	transition: 1s;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-}
-.teunbot:hover {
-	background-size: 100%;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-}
-.teunbotfoto {
-	background-image: url(images/teunbotfoto.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	transition: 1s;
-}
-.teunbotfoto:hover {
-	background-position: center 55%;
-	background-size: 104%;
-}	
-
-.overig {
-	background-image: url(images/overig.png);
-	background-size: 130%;
-	background-position: center center;
-	transition: 1s;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-}
-.overig:hover {
-	background-size: 100%;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-}
-.overigfoto {
-	background-image: url(images/overigfoto.png);
-	background-size: 40%;
-	background-repeat: no-repeat;
-	background-position: 1% bottom;
-	transition: 1s;
-}
-.overigfoto:hover {
-	background-position: -2% bottom;
-}
-.donatiebox {
-	background-image: url(images/money.png);
-	background-size: 130%;
-	background-position: center center;
-	transition: 1s;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-}
-
-.donatiebox:hover {
-	background-size: 100%;
-	box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-}
-.donatiefoto {
-	background-image: url(images/donatiefoto.png);
-	background-size: 40%;
-	background-repeat: no-repeat;
-	background-position: 1% bottom;
-	transition: 1s;
-}
-.donatiefoto:hover {
-	background-position: -2% bottom;
-}
-
-.homebutton {
-	width: 40%;
-	margin: auto;
-	text-align: center;
-	color: #333;
-	margin-left: auto;
-	margin-right: 30.1%;
-	overflow: hidden;
-}	
-
-.darkmode h1 {
-	color: white;
-}
-
-.content {
-	background-color: white;
-	height: 100%;
-	font-family: "Comic Sans MS", cursive, sans-serif; 
-	color:#333;
-	transition: 0.4s;
-}
-	.darkmode .content {
-		background-color: #333;
-		color: white;
-}
-
-.button {
-	color: black;
-	text-decoration: none;
-}	  
 
 .link {
 	color: #333;
@@ -359,30 +28,12 @@ body {
 	color: white
 }
 
-.infotext {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	text-align: center;
-	list-style-position: inside;
-	height: 50vh;
-	padding-top: 10px;
-}
-ul {
-	text-align: center;
-	width: 39%;
-	position:relative;
-	left: 27.9vw;
-	}
-
 .bar {
 	width: 50%;
 	height: auto;
 	background-color: #888;
 	border-radius: 35px;
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
 	transition: 0.4s;
 }
 
@@ -401,10 +52,6 @@ ul {
 .donatieknop {
 	background-image: url(images/money.png);
 	background-size: 130%;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
 	width: 35%;
 	line-height: 10vh;
 	background-position: center center;
@@ -429,126 +76,22 @@ ul {
 .darkmode .disclaimer {
 	color: whitesmoke;
 }
-
-
-  .infobox {
-	position: relative;
-	margin-top: 100px;
-	height: 15vw;
-	background-image: url("images/achtergrond1.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-attachment: fixed;
-	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 60%);
-	overflow: hidden;
-}
-
-.infoforeground {
-	position: relative;
-	height: 15vw;
-	max-width: 100vw;
-	background-image: url("images/voorgrond1.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	z-index: 1;
-	background-position: right bottom;
-	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 60%);
-	overflow: hidden;
-	color: white;
-	font-family: "Comic Sans MS", cursive, sans-serif; 
-	text-align: center;
-}
-.infoforeground p {
-	font-size: 10px;
-	opacity: 70%;
-	line-height: 53vh;
-}
 @media (max-width: 1000px) {
-
-    .wrapper {
-		height: 35vh;
-		width: 100%;
-		background-size: 120vh;
-		overflow: hidden;
-	}
 	.bar {
 		width: 80%;
 		height: 50px;
 		margin-bottom: 50px;
 	}
 
+	.teunimg {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
 	.progress {
 		padding-left: 10px;
 	}
-	.infoforeground p {
-		font-size: 10px;
-		opacity: 70%;
-		line-height: 13vh;
-	}
 
-	.buddhaimg {
-		top: 7vh;
-		left: 15%;
-		max-height: 100vh;
-		max-width: 200vw;
-		width: 40vh;
-	}
-	.headerbanner {
-	font-size: 25px;	
-	}	
-	.bar1, .bar2, .bar3 {
-		width: 65px;
-		height: 7px;
-		margin: 12px 15px;
-	}
-	.sidebar {
-		width: 100%;
-		margin-left: -100%;
-	}
-	.change .sidebar {
-		-webkit-transform: translate(0px, 0px);
-		transform: translate(100%, 0px);
-	}
-
-	.sidebarsegment {
-		width: 100%;
-		height: 12%;
-		line-height: 15vh;
-		font-size: 80px;
-		text-shadow: 3px 3px 3px #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
-	}
-	.menubutton {
-		left:20px; 
-		top: 40px;
-		width: 60px;
-	}
-	.change .bar1 {
-		-webkit-transform: rotate(-90deg) translate(-9px, 9px);
-		transform: rotate(-90deg) translate(-17px, 15px);
-	}
-				
-	.change .bar2 {
-		-webkit-transform: rotate(-90deg) translate(2px, -2px);
-		transform: rotate(-90deg) translate(2px, -3px);
-	}
-				
-	.change .bar3 {
-		-webkit-transform: rotate(-90deg) translate(13px, -13px);
-		transform: rotate(-90deg) translate(21px, -21px);
-	}	
-	.darken {
-		margin-left: 100%;
-	}	
-	.infotext {
-		font-size: 35px;
-		height: 60vh;
-	}
-	ul {
-		text-align: center;
-		width: 90%;
-		left: 2.5%;
-	}
 	.donatieknop {
 		background-size: 120%;
 		width: 85%;
@@ -556,12 +99,7 @@ ul {
 		text-shadow: 3px 3px 3px #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
 		border-radius: 100px;
 	}
-	.change .darken {
-		opacity: 0%;
-	}	
-	.infobox {
-		margin-top: 200px;
-	}
+
 	.darkmodebutton {
 		margin-left:24px; 
 		margin-top: 40px;
