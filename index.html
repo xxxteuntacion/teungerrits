@@ -80,7 +80,7 @@
 		</div>
 		<div class="content">
 			<div class="banner" id= "wrapper">
-				<img src="images/boeddha_alleenteun.png" class="teunimg">	
+				<img src="images/boeddha_alleenteun.png" class="teunimg" id="teunimg">	
 			</div>
 			<div class="infotext">
 				<h2>Welkom op teungerrits.nl!</h2>
@@ -118,6 +118,17 @@
 			function menuknop() {
 				document.body.classList.toggle("change");
 			}	
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+  				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+   				 	document.getElementById("teunimg").style.bottom = "-100%";
+					document.getElementById("teunimg").style.opacity = "0%";
+  				} else {
+    				document.getElementById("teunimg").style.bottom = "0%";
+					document.getElementById("teunimg").style.opacity = "100%";
+  				}
+			}
 		</script>
 	</body>
 </html>
