@@ -145,14 +145,16 @@ html {
 		transform: rotate(360deg);
 	}
 .sidebar {
+	position: absolute;
 	width: 19%;
 	background-color: #333;
+	margin: 0% 0% 0% -19%;
 	height: 100vh;
-	margin-left: -19%;
 	transition: 0.3s;
 	float:left;
 	overflow: hidden;
 	pointer-events: auto;
+	z-index: 4;
 }
 				
 	.change .sidebar {
@@ -160,6 +162,7 @@ html {
 }
 
 .darken {
+	position: absolute;
 	width: 100vw;
 	background-color: black;
 	opacity: 0%;
@@ -167,12 +170,11 @@ html {
 	transition: 0.3s;
 	pointer-events: none;
 	overflow: hidden;
-	margin-left: 0%;
+	z-index: 3;
 }
 				
 	.change .darken {
 		opacity: 60%;
-		transform: translate(18.9%, 0px);
 		pointer-events: auto;
 		cursor: pointer;
 	}		
