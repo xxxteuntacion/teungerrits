@@ -50,20 +50,36 @@ html {
 	z-index: 0;
 }
 
+@keyframes infodivider{
+	0%{background-position: center left;}
+	100%{background-position: center right;}
+}
 .infodivider {
 	position: relative;
 	margin-top: 100px;
 	height: 20vh;
 	max-width: 100vw;
-	background-image: url("images/achtergrond1.png.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-size: 130%;
 	background-attachment: fixed;
 	z-index: 1;
-	background-position: center;
+	background-position: center left;
 	box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-	transition: 0.8s;
+	animation-name: infodivider;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
 }
+
+.background1 {
+	background-image: linear-gradient(to top left, #0D2340, #165873, #0AA696, #1BF2CB);
+}
+
+.background2 {
+	background-image: linear-gradient(to top left, #72F2F2, #84BFB9, #30BF8B, #2B8C69);
+}
+
+
 
 .headerbanner {
 	margin: 0;
@@ -140,7 +156,6 @@ html {
 }
 				
 	.change .sidebar {
-		-webkit-transform: translate(100%, 0px);
 		transform: translate(100%, 0px);
 }
 
@@ -173,19 +188,16 @@ html {
 	
 			
 	.change .bar1 {
-		-webkit-transform: rotate(-90deg) translate(-9px, 9px);
 		transform: rotate(-90deg) translate(-9px, 9px);}
 				
 	.change .bar2 {
-		-webkit-transform: rotate(-90deg) translate(2px, -2px);
 		transform: rotate(-90deg) translate(2px, -2px);}
 
 				
 	.change .bar3 {
-		-webkit-transform: rotate(-90deg) translate(13px, -13px);
 		transform: rotate(-90deg) translate(13px, -13px);}		
 	
-	.darkmode .bar1{
+	.darkmode .bar1 {
 		background-color: white;
 	}
 	.darkmode .bar2 {
@@ -353,7 +365,7 @@ html {
 	margin-top: 150px;
 	height: 15vw;
 	width: 100%;
-	background-image: url("images/achtergrond1.png");
+	background-image: linear-gradient(to bottom left, #0D2340, #165873,#2B8C69,#25594B);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;

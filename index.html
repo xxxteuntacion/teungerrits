@@ -8,8 +8,8 @@
 		<meta name="teun." content="teun gerrits">
 		<meta name="je gaat hier niks vinden." content="Teun Gerrits.">
 		<meta name="Gerrits" content="">
-		<link href="index.css" rel="stylesheet" type="text/css"/>
 		<link href="header.css" rel="stylesheet" type="text/css"/>
+		<link href="index.css" rel="stylesheet" type="text/css"/>
 		<style>
 		body {
 			background-color: white;
@@ -21,13 +21,13 @@
 	<body>		
 		<div class="header" id="header">
 			<div class="darkmodebutton" onclick="darkmodebutton()"><img id="myImage" src="images/darkmode.png"></div>
-			<div class="headerbanner">
+			<div class="headerbanner" id="headerbanner">
 				<div class="menubutton" onclick="menuknop()">
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>											
 				</div>					
-				<H1>Teungerrits.nl</H1>	
+				<H1 id="logo">Teungerrits.nl</H1>	
 			</div>
 			<div class="sidebar">
 				<div class="sidebarsegment">
@@ -80,14 +80,15 @@
 		</div>
 		<div class="content">
 			<div class="banner" id= "wrapper">
-				<img src="images/boeddha_alleenteun.png" class="teunimg" id="teunimg">	
+				<img src="images/clouds.png" class="clouds" id="teunimg">		
+				<img src="images/gannu.png" class="teunimg" id="teunimg">	
 			</div>
 			<div class="infotext">
 				<h2>Welkom op teungerrits.nl!</h2>
 				<p>Op deze website kun je de Teun fetish van je voeden!</p>
 				<p>Je kan hier namelijk Teun zijn socials volgen, Teun's merch kopen en nog veel meer!</p>
 			</div>
-			<div class="infodivider"></div>
+			<div class="infodivider background1"></div>
 			<div class="infotext">
 				<h2>Wie is Teun?</h2>
 				<p>Teun is een legendarisch persoon, denkt hij.</p>
@@ -101,7 +102,7 @@
 				</ul>
 				<p><b>En nog veel meer!</b></p>
 			</div>
-			<div class="infodivider"></div>
+			<div class="infodivider background2"></div>
 			<div class="infotext">
 				<h2>Merch!</h2>
 				<p>Zoals elk succesvol persoon heeft Teun ook zijn eigen producten op de markt!</p>			
@@ -118,17 +119,6 @@
 			function menuknop() {
 				document.body.classList.toggle("change");
 			}	
-			window.onscroll = function() {scrollFunction()};
-
-			function scrollFunction() {
-  				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-   				 	document.getElementById("teunimg").style.bottom = "-100%";
-					document.getElementById("teunimg").style.opacity = "0%";
-  				} else {
-    				document.getElementById("teunimg").style.bottom = "0%";
-					document.getElementById("teunimg").style.opacity = "100%";
-  				}
-			}
 		</script>
 	</body>
 </html>
