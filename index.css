@@ -7,20 +7,6 @@
 	background-attachment: fixed; 
 }
 
-@keyframes clouds{
-	0%{transform: translate(0%, 0px);}
-	100%{transform: translate(-30%, 0px);}
-}
-
-.clouds {
-	position: absolute;
-	width: 130%;
-	height: auto;
-	margin-top: -10%;
-	animation: alternate infinite 10s ease-in-out clouds;
-}
-
-
 .darkmode .banner {
 	background-color: #333;
 }	

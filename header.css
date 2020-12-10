@@ -346,10 +346,11 @@ html {
 	height: 15vw;
 	max-width: 100vw;
 	background-image: url("images/voorgrond1.png");
-	background-size: 100%;
+	background-size: 14vw;
 	background-repeat: no-repeat;
 	z-index: 1;
-	background-position: right bottom;
+	background-position: right 115%;
+	background-attachment: fixed;
 	clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 60%);
 	overflow: hidden;
 	color: white;
@@ -417,17 +418,6 @@ h1 {
 	margin-left: 3%;
 }
 
-.infobox img{
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	top: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-}
 
 .content {
 	background-color: white;
@@ -519,11 +509,22 @@ h1 {
 		width: 60px;
 		height: 60px;
 	}
+
 	.infoforeground p {
-		font-size: 10px;
-		opacity: 70%;
-		line-height: 13vh;
+		font-size: 12px;
+		line-height: 28vh;
 	}
+
+	.infobox {
+		height: 16vh;
+	}
+
+	.infoforeground {
+		height: 16vh;
+		background-size: 14vh;
+		background-position: right 106%;
+	}
+
 	h1 {
 		margin-left: 10%;
 	}
