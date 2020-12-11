@@ -31,7 +31,7 @@ html {
 	position: relative;
 	margin: 0px;
 	height: 35vw;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;				
 	background-position: center top;
 	background-attachment: fixed; 
@@ -50,10 +50,6 @@ html {
 	z-index: 0;
 }
 
-@keyframes infodivider{
-	0%{background-position: center left;}
-	100%{background-position: center right;}
-}
 .infodivider {
 	position: relative;
 	margin-top: 100px;
@@ -64,11 +60,6 @@ html {
 	z-index: 1;
 	background-position: center left;
 	box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-	animation-name: infodivider;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-direction: alternate-reverse;
-	animation-iteration-count: infinite;
 }
 
 .background1 {
@@ -148,9 +139,9 @@ html {
 	position: absolute;
 	width: 19%;
 	background-color: #333;
-	margin: 0% 0% 0% -19%;
+	transform: translate(-100%, 0px);
 	height: 100vh;
-	transition: 0.3s;
+	transition: 0.5s;
 	float:left;
 	overflow: hidden;
 	pointer-events: auto;
@@ -158,7 +149,7 @@ html {
 }
 				
 	.change .sidebar {
-		transform: translate(100%, 0px);
+		transform: translate(0%, 0px);
 }
 
 .darken {
@@ -246,7 +237,7 @@ html {
 	}
 
 	.merch {
-		background-image: url(images/krantpack.png);
+		background-image: url(images/merch.png);
 		background-size: 130%;
 		background-position: center center;
 		transition: 1s;
@@ -258,7 +249,7 @@ html {
 		box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
 	}
 	.merchfoto {
-		background-image: url(images/krantpackfoto.png);
+		background-image: url(images/merchfoto.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -268,30 +259,6 @@ html {
 		background-size: 102%;
 		background-position: center -15px;
 	}	
-
-	.teunbot {
-		background-image: url(images/teunbot.png);
-		background-size: 130%;
-		background-position: center center;
-		transition: 1s;
-		box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-	}
-	.teunbot:hover {
-		background-size: 100%;
-		box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-	}
-	.teunbotfoto {
-		background-image: url(images/teunbotfoto.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-		transition: 1s;
-	}
-	.teunbotfoto:hover {
-		background-position: center 55%;
-		background-size: 104%;
-	}	
-
 	.overig {
 		background-image: url(images/overig.png);
 		background-size: 130%;
@@ -335,6 +302,7 @@ html {
 	.donatiefoto:hover {
 		background-position: -2% bottom;
 	}
+	
 
 .button {
 	color: black;
@@ -369,7 +337,7 @@ html {
 	height: 15vw;
 	width: 100%;
 	background-image: linear-gradient(to bottom left, #0D2340, #165873,#2B8C69,#25594B);
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-attachment: fixed;
@@ -381,14 +349,13 @@ html {
 
 @keyframes infotextani {
 	0% {opacity: 0;}
-	50% {opacity: 0;}
 	100% {opacity: 100;}
 }	
 
 .infotext {
 	text-align: center;
 	animation-name: infotextani;
-	animation-duration: 5s;
+	animation-duration: 1s;
 	padding: 10px 30px 0px 30px;
 	font-size: 17px;
 }
