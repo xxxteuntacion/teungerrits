@@ -214,7 +214,7 @@ html {
 }
 
 	.socials {
-		background-image: url(images/socials.png);
+		background-image: url(images/socialssmall.png);
 		background-size: 100%;
 		background-position: center center;
 		transition: 1s;
@@ -237,7 +237,7 @@ html {
 	}
 
 	.merch {
-		background-image: url(images/merch.png);
+		background-image: url(images/merchsmall.png);
 		background-size: 130%;
 		background-position: center center;
 		transition: 1s;
@@ -260,7 +260,7 @@ html {
 		background-position: center -15px;
 	}	
 	.overig {
-		background-image: url(images/overig.png);
+		background-image: url(images/overigsmall.png);
 		background-size: 130%;
 		background-position: center center;
 		transition: 1s;
@@ -282,7 +282,7 @@ html {
 	}	
 
 	.donatiebox {
-		background-image: url(images/money.png);
+		background-image: url(images/moneysmall.png);
 		background-size: 130%;
 		background-position: center center;
 		transition: 1s;
@@ -293,7 +293,7 @@ html {
 		box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
 	}
 	.donatiefoto {
-		background-image: url(images/donatiefoto.png);
+		background-image: url(images/donatiefotosmall.png);
 		background-size: 40%;
 		background-repeat: no-repeat;
 		background-position: 1% bottom;
