@@ -12,57 +12,49 @@
 		<link href="index.css" rel="stylesheet" type="text/css"/>
 		<style>
 		body {
-			background-color: white;
+			background-color: #111;
 			margin: 0%;
-			color: #333;
+			color: white;
 			}		
 		</style>
 	</head>
 	<body>		
 		<div class="header" id="header">
-			<div class="darkmodebutton" onclick="darkmodebutton()"><img id="myImage" src="images/darkmode.png" alt="een foto van teun" load="lazy"></div>
 			<div class="headerbanner" id="headerbanner">
 				<div class="menubutton" onclick="menuknop()">
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>											
-				</div>					
-				<H1 id="logo">Teungerrits.nl</H1>	
+				</div>
+				<a href="https://teungerrits.nl/" class="button" id="headertext"><h1>teungerrits.nl</h1></a>	
+				<a href="#wrapper" class="upbutton button" id="upbutton"><h1>&#9650</h1></a>			
 			</div>
 			<div class="sidebar">
-				<div class="sidebarsegment">
+				<div class="sidebarsegment sideleft">
 					<a href="socials" class="button">
-						<div class="socials">
-							<div class="socialsfoto">
+						<div class="socials sideleft">
 							<p><b>socials</b></p>
-							</div>
 						</div>
 					</a>	
 				</div>
 				<div class="sidebarsegment">
 					<a href="https://shop.spreadshirt.nl/geef-geld-aan-teun/" class="button">
-						<div class="merch">
-							<div class="merchfoto">
-								<p><b>merch</b></p>
-							</div>
+						<div class="merch sideright">
+							<p><b>merch</b></p>
 						</div>
 					</a>	
 				</div>
 				<div class="sidebarsegment">
 					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button">
-						<div class="overig">
-							<div class="overigfoto">
-								<p><b>?</b></p>
-							</div>
+						<div class="overig sideleft">
+							<p><b>?</b></p>
 						</div>
 					</a>	
 				</div>
 				<div class="sidebarsegment">
 					<a href="donatiebox" class="button">
-						<div class="donatiebox">
-							<div class="donatiefoto">
-								<p><b>donatiebox</b></p>
-							</div>
+						<div class="donatiebox sideright">
+							<p><b>donatiebox</b></p>
 						</div>
 					</a>	
 				</div>
@@ -71,91 +63,86 @@
 		</div>
 		<div class="content">
 			<div class="banner" id= "wrapper">
-				<img src="images/gannukerst.png" class="teunimg" id="teunimg">	
+				<div class="bannerfade" id="bannerfade">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#111" fill-opacity="1" d="M0,128L40,133.3C80,139,160,149,240,154.7C320,160,400,160,480,138.7C560,117,640,75,720,96C800,117,880,203,960,234.7C1040,267,1120,245,1200,229.3C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+				</div>
 			</div>
-			<div class="infotext">
+			<div class="infotext about">
 				<h2>Welkom op teungerrits.nl!</h2>
 				<p>Op deze website kun je de Teun fetish van je voeden!</p>
 				<p>Je kan hier namelijk Teun zijn socials volgen, Teun's merch kopen en nog veel meer!</p>
 			</div>
-			<div class="infodivider background1"></div>
-			<div class="infotext">
-				<h2>Wie is Teun?</h2>
-				<p>Teun is een legendarisch persoon, denkt hij.</p>
-				<ul><b>Teun heeft in zijn vorige levens veel dingen gedaan, zoals:</b>
-					<li>Onderdeel zijn van een cartel.</li>
-					<li>Eilanden ontdekken met de V.O.C.</li>
-					<li>call of duty e-sporter.</li>
-					<li>Het scheppen van alles.</li>
-					<li>Opstaan uit de dood.</li>
-					<li>reddit gebruiken.</li>
-				</ul>
-				<p><b>En nog veel meer!</b></p>
-				<div class="center">
-					<a href="socials" class="button">
-						<div class="paginaknop socials">
-							<p><b>Ga naar mijn socials!</b></p>
-						</div>
-					</a>	
+			<div class="infodivider background1">
+				<div class="info">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="top"><path fill="#111" fill-opacity="1" d="M0,32L48,26.7C96,21,192,11,288,21.3C384,32,480,64,576,117.3C672,171,768,245,864,234.7C960,224,1056,128,1152,112C1248,96,1344,160,1392,192L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
+					<div class="infotext ">
+						<h2 >Wie is Teun?</h2>
+						<p >Teun is een zeer aparte jongen geboren in het jaar 2004 in de stad Hardenberg. Hij heeft deze website gemaakt om zijn eigen ego te voeden. Teun maakt allemaal gekke dingen zoals een website en games, ook maakt hij zijn eigen merch.</p>			
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="bottom"><path fill="#111" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,208C384,235,480,245,576,224C672,203,768,149,864,149.3C960,149,1056,203,1152,234.7C1248,267,1344,277,1392,282.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 				</div>
 			</div>
-			<div class="infodivider background2"></div>
-			<div class="infotext">
-				<h2>Merch!</h2>
-				<p>Zoals elk succesvol persoon heeft Teun ook zijn eigen producten op de markt!</p>			
-				<p>koop het pls</p>
-				<div class="center">
-					<a href="https://shop.spreadshirt.nl/geef-geld-aan-teun/" class="button">
-						<div class="paginaknop merch">
-							<p><b>Ga naar mijn merch!</b></p>
-						</div>
-					</a>	
+			<div class="infotext ">
+				<h2 >Teun's socials</h2>
+				<p >Zoals iedereen in de 21e eeuw heeft Teun ook social media!</p>
+				<p>Klik op de knop hieronder om zijn social media accounts te volgen!</p>
+				<a href="socials"class="button homepagebtn"><b>Ga naar de socials pagina <span class="btnani">&#187;</span></b></a>			
+			</div>
+			<div class="infodivider background2">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="top"><path fill="#111" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,138.7C384,96,480,64,576,80C672,96,768,160,864,202.7C960,245,1056,267,1152,266.7C1248,267,1344,245,1392,234.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+				<div class="infotext">
+					<h2 >Teun's Merch</h2>
+					<p >Ja, Teun heeft zijn eigen merchendise. Er zijn meer dan 5 verschillende designs allemaal gemaakt door Teun.</p>
+					<p>Van T-shirts tot broodtrommels, deze winkel heeft bijna alles dat met Teun te maken heeft!</p>
+					<a href="https://shop.spreadshirt.nl/geef-geld-aan-teun/"class="button homepagebtn"><b>Koop Teun's merch! <span class="btnani">&#187;</span></b></a>			
 				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="bottom"><path fill="#111" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,197.3C384,203,480,245,576,229.3C672,213,768,139,864,101.3C960,64,1056,64,1152,80C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 			</div>
-			<div class="infodivider background1"></div>
-			<div class="infotext">
-				<h2>?</h2>
-				<p>ik heb dit nog niet af gemaakt en als je op die link klikt dan gebeurt er niks speciaals ;)</p>
-				<div class="center">
-					<a href="https://pornhub.com/" class="button">
-						<div class="paginaknop overig">
-							<p><b>?? ???? ???? ?????!</b></p>
-						</div>
-					</a>	
+			<div class="infotext ">
+				<h2 >Teun's overige dingen</h2>
+				<p >Aangezien Teun zo succesvol is kon hij niet alles in de sidebar gooien want dan is die te groot.</p>
+				<p>Je kan hier allemaal dingen vinden van minecraft recource packs tot een remake van een oude game (soon&trade;)</p>
+				<a href="overig"class="button homepagebtn"><b>Ga naar de overig pagina <span class="btnani">&#187;</span></b></a>			
+			</div>
+			<div class="infodivider background3">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="top"><path fill="#111" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,202.7C672,192,768,96,864,64C960,32,1056,64,1152,101.3C1248,139,1344,181,1392,202.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+				<div class="infotext">
+					<h2 >De donatiebox</h2>
+					<p >Het onderhouden van een website kost geld, als je geld doneert zorg je er voor dat deze fantastische site online blijft!</p>
+					<p>Je kan ook een Patreon worden en geweldige dingen krijgen!</p>
+					<a href="donatiebox"class="button homepagebtn"><b>Doneer nu! <span class="btnani">&#187;</span></b></a>			
 				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="bottom"><path fill="#111" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,154.7C672,192,768,224,864,240C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 			</div>
-			<div class="infodivider background2"></div>
-			<div class="infotext">
-				<h2>Donatiebox!</h2>
-				<p>Je kan op deze fantastische website ook geld doneren aan mij!
-					<br>
-					Dus geef je geld aan mij!
-				</p>
-				<div class="center">
-					<a href="donatiebox" class="button">
-						<div class="paginaknop donatiebox">
-							<p><b>Ga naar mijn donatiebox!</b></p>
-						</div>
-					</a>	
+			<div class="footer">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="top"><path fill="#111" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,144C384,149,480,203,576,192C672,181,768,107,864,106.7C960,107,1056,181,1152,197.3C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+				<div class="nerdtext">
+					<p>Teungerrits.nl is een website gemaakt door Teun Gerrits. Alle rechten voorbehouden.</p>
+					<br/>
 				</div>
-			</div>
-			<br>
-			<div class="center">
-				<a href="#wrapper" class="button2">
-					<p class="infotext">----klik hier om terug naar boven te gaan----</p>
-				</a>	
-			</div>
-			<div class="infobox" id="infobox">
-				<div class="infoforeground"><p>Teungerrits.nl is een website gemaakt door Teun Gerrits. Alle rechten voorbehouden.</p></div>
 			</div>
 		</div>
-		<script src="darkmode.js"></script>
 		<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
 
 			function menuknop() {
 				document.body.classList.toggle("change");
 			}	
+
+			window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					document.getElementById("headertext").style.opacity = "0";
+					document.getElementById("upbutton").style.transform = "translate(0, 95vh)";
+					document.getElementById("bannerfade").style.backgroundPosition = "center 0%";
+				} else {
+					document.getElementById("headertext").style.opacity = "1";
+					document.getElementById("upbutton").style.transform = "translate(300%, 95vh)";
+					document.getElementById("bannerfade").style.backgroundPosition = "center 10vh";
+				}
+			}
+
 		</script>
 	</body>
 </html>
