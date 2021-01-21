@@ -1,0 +1,26 @@
+.sideimage {
+    width: 30%;
+    height: 40%;
+}
+
+.sideimage img {
+    position: relative;
+    z-index: 2;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.right img {
+    animation: 15s ease-in-out infinite alternate imgani;
+}
+
+@keyframes imgani {
+    0% {transform: translate(0, 0)  rotate(0deg);}
+    100% {transform: translate(0, 1rem) rotate(10deg);}
+}
+
